@@ -15,7 +15,7 @@ licensed under MIT. The upstream notice is preserved in
 
 The default palette is One Dark Pro. If the
 [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin is
-installed, the theme exposes these palette variants:
+installed, the theme also exposes these palette classes:
 
 - One Dark Pro
 - One Dark Pro Darker
@@ -23,9 +23,10 @@ installed, the theme exposes these palette variants:
 - One Dark Pro Flat
 - One Dark Pro Night Flat
 
-Like Catppuccin for Obsidian, One Dark Pro is installed as a single Obsidian
-theme. The variants are selected from **Style Settings**, not from Obsidian's
-theme picker.
+Obsidian's community theme format installs one `manifest.json` and one
+`theme.css` per selectable theme. To make all One Dark Pro variants selectable
+without Style Settings, this repository also provides a local build script that
+creates five separate theme folders.
 
 ## Installation
 
@@ -47,11 +48,18 @@ After the theme is accepted into the community directory:
 3. Restart Obsidian.
 4. Select **One Dark Pro** from **Settings > Appearance > Themes**.
 
-### Palette selection
+### Manual multi-theme installation
 
-1. Install and enable the Style Settings community plugin.
-2. Open **Settings > Style Settings > One Dark Pro**.
-3. Select a palette from **Palette**.
+1. Run `sh scripts/build-theme-variants.sh`.
+2. Copy the folders in `themes/` into your vault's `.obsidian/themes/`
+   directory.
+3. Restart Obsidian.
+4. Select any of these themes from **Settings > Appearance > Themes**:
+   - **One Dark Pro**
+   - **One Dark Pro Darker**
+   - **One Dark Pro Mix**
+   - **One Dark Pro Flat**
+   - **One Dark Pro Night Flat**
 
 ## Release checklist
 
