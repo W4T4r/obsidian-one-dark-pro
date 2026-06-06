@@ -9,7 +9,7 @@ This theme is inspired by and adapts palette decisions from
 licensed under MIT. The upstream notice is preserved in
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-![One Dark Pro preview](screenshot.svg)
+![One Dark Pro preview](screenshot.png)
 
 ## Palettes
 
