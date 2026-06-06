@@ -23,6 +23,11 @@ installed, the theme also exposes these palette classes:
 - One Dark Pro Flat
 - One Dark Pro Night Flat
 
+Obsidian's community theme format installs one `manifest.json` and one
+`theme.css` per selectable theme. To make all One Dark Pro variants selectable
+without Style Settings, this repository also provides a local build script that
+creates five separate theme folders.
+
 ## Installation
 
 ### From Obsidian Community Themes
@@ -42,6 +47,19 @@ After the theme is accepted into the community directory:
 2. Copy `manifest.json` and `theme.css` into that folder.
 3. Restart Obsidian.
 4. Select **One Dark Pro** from **Settings > Appearance > Themes**.
+
+### Manual multi-theme installation
+
+1. Run `sh scripts/build-theme-variants.sh`.
+2. Copy the folders in `themes/` into your vault's `.obsidian/themes/`
+   directory.
+3. Restart Obsidian.
+4. Select any of these themes from **Settings > Appearance > Themes**:
+   - **One Dark Pro**
+   - **One Dark Pro Darker**
+   - **One Dark Pro Mix**
+   - **One Dark Pro Flat**
+   - **One Dark Pro Night Flat**
 
 ## Release checklist
 
